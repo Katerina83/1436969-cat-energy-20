@@ -15,7 +15,7 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">
                 Главная
               </a>
@@ -25,7 +25,7 @@
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a>
                 Подбор программы
               </a>
@@ -42,7 +42,7 @@
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="page-main__form-profile" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="page__main--general-information form">
+        <fieldset class="page-main__general-information form">
           <label class="page-main__form-lable">
             имя:
             <sup>*</sup>
@@ -59,7 +59,7 @@
             <input type="text" name="login" placeholder="7">
           </label>
         </fieldset>
-        <fieldset class="page__main--filter-1 form">
+        <fieldset class="page-main__first-filter form">
           <input type="checkbox" name="subscribe" id="slimming" checked>
           <label class="page-main__form-lable" for="slimming">
             похудение
@@ -73,7 +73,7 @@
             Не знаю (Нужен ваш совет)
           </label>
         </fieldset>
-        <fieldset class="page__main--contacts form">
+        <fieldset class="page__main-contacts form">
           <p>
             Контактные данные (владельца кота)
           </p>
@@ -88,7 +88,7 @@
             <input type="tel" name="tel" pattern="\8\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required placeholder="8 (960) 900-60-90">
           </label>
         </fieldset>
-        <fieldset class="page__main--comment form">
+        <fieldset class="page__main-comment form">
           <p>
             Комментарий
           </p>
@@ -96,7 +96,7 @@
             Расскажите обо всех повадках кота
           </textarea>
         </fieldset>
-        <fieldset class="page__main--filter-2 form">
+        <fieldset class="page-main__second-filter form">
           <input type="checkbox" name="subscribe" id="sweetener" checked>
           <label class="page-main__form-lable" for="sweetener">
             сахарозаменитель
@@ -114,7 +114,7 @@
             витамины
           </label>
         </fieldset>
-        <button class="page__main--button-form" type="submit">отправить заявку</button>
+        <button class="page-main__button-form" type="submit">отправить заявку</button>
       </form>
       <p class="page-main__required-fields">
         <sup>*</sup>
@@ -130,15 +130,17 @@
           <p class="page-footer__contacts-subtitle">
             приглашаем к сотрудничеству дилеров!
           </p>
-          <p class="page-footer__contacts-location">
+          <address class="page-footer__contacts-location">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+          </address>
         </div>
         <div class="page-footer__location">
           <img class="lacation-map" src="img/map.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           <img class="lacation-map-pin" src="img/map-pin.png" alt="указатель">
         </div>
-        <img class="page-footer__logo" src="img/footer-logo.svg" width="128" height="24" alt="логотип компании кэт энерджи">
+        <div class="page-footer__logo-icon">
+          <img class="page-footer__logo" src="img/footer-logo.svg" width="128" height="24" alt="логотип компании кэт энерджи">
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

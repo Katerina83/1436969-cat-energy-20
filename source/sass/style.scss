@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "global.scss";
+@import "mixins.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/info-main.scss";
+@import "blocks/program-main.scss";
+@import "blocks/description.scss";
+@import "blocks/example.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/footer-contacts.scss";
+@import "blocks/footer-location.scss";
+@import "blocks/footer-logo.scss";
+@import "blocks/footer-social.scss";
+@import "blocks/footer-copy.scss";
+@import "blocks/page.scss";
+@import "blocks/catalog-title.scss";
+@import "blocks/catalog-article.scss";
+@import "blocks/section-gds.scss";
+@import "blocks/section-add-gds.scss";
+@import "blocks/wrapper-present.scss";

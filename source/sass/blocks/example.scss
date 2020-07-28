@@ -1,0 +1,68 @@
+.example {
+  margin-bottom: 28px;
+  margin-top: 28px;
+  background-color: $basic-background;
+}
+
+.example__section-example-title {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $basic-black;
+}
+
+.example__section-subtitle {
+  font-family: $font-arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-basic-size;
+  line-height: $font-basic-line;
+  text-align: center;
+  color: $basic-black;
+}
+
+.example__subtitle-module {
+  font-family: $font-arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $special_dark-grey;
+}
+
+.example__module-span {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $basic-black;
+}
+
+.example__subtitle-expenses {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.example__button-slider {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,38 @@
+.catalog-article {
+  margin-bottom: 44px;
+}
+
+.catalog-article__catalog-article-title {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $special_dark-grey2;
+}
+
+.catalog-article__catalog-table-column {
+  font-family: $font-arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special_dark-grey;
+}
+
+.catalog-article__catalog-button {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  padding: 7px 44px;
+}

@@ -1,0 +1,36 @@
+.section-gds {
+  margin-bottom: 28px;
+}
+
+.section-gds__gds-title {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.section-gds__gds-subtitle {
+  font-family: $font-arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special_dark-grey;
+}
+
+.section-gds__gds-button {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}

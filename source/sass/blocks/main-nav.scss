@@ -12,7 +12,7 @@
 }
 
 .main-nav__wrapper {
-  font-family: $font-oswald;
+  font-family: "oswaldmedium", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -26,13 +26,6 @@
 .main-nav__list {
   list-style: none;
   margin-left: -30px;
-}
-
-.site-list__item {
-  border-top: 1px solid $basic-color-line;
-  border-bottom: 1px solid $basic-color-line;
-  padding: 22px 0 24px 0;
-  width: 140%;
 }
 
 .site-list__link {

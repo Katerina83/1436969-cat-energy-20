@@ -1,6 +1,7 @@
-@import "variables.scss";
-@import "global.scss";
-@import "mixins.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+//@import "css/normolaze.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
@@ -20,4 +21,3 @@
 @import "blocks/section-gds.scss";
 @import "blocks/section-add-gds.scss";
 @import "blocks/wrapper-present.scss";
-@import "blocks/form.scss";

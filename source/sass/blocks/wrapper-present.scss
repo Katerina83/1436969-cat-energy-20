@@ -1,13 +1,13 @@
 .wrapper-present {
   margin-bottom: 35px;
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 280px;
   height: 289px;
 }
 
 .wrapper-present__subtitle {
-  font-family: $font-arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

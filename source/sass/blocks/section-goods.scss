@@ -1,19 +1,19 @@
-.catalog-article {
-  margin-bottom: 44px;
+.section-goods {
+  margin-bottom: 28px;
 }
 
-.catalog-article__catalog-article-title {
+.section-goods__title {
   font-family: "oswaldregular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
+  text-align: center;
   text-transform: uppercase;
-  color: $special_dark-grey2;
+  color: $special-black;
 }
 
-.catalog-article__catalog-table-column {
+.section-goods__subtitle {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -23,7 +23,7 @@
   color: $special_dark-grey;
 }
 
-.catalog-article__catalog-button {
+.section-goods__button {
   font-family: "oswaldregular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -32,7 +32,5 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: $basic-white;
-  background-color: $basic-green;
-  padding: 7px 44px;
+  color: $special_dark-grey;
 }

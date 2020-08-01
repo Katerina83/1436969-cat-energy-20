@@ -1,0 +1,39 @@
+.section-item {
+  margin-top: 13px;
+  margin-bottom: 18px;
+}
+
+.section-item__title {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: $basic-black;
+}
+
+.section-item__subtitle {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  align-items: center;
+  text-align: center;
+  color: $special_dark-grey;
+}
+
+.section-item__button {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  padding: 7px 44px;
+}

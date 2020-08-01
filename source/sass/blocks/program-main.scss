@@ -1,0 +1,41 @@
+.program-main {
+  margin-bottom: 27px;
+}
+
+.program-main__section {
+  margin-bottom: 20px;
+  background-color: $basic-background;
+}
+
+.program-main__section-title {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic-black;
+  text-align: center;
+}
+
+.program-main__section-subtitle {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-basic-size;
+  line-height: $font-basic-line;
+  text-transform: uppercase;
+  color: $basic-black;
+  text-align: center;
+}
+
+.program-main__link-catalog {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic-black;
+  text-align: center;
+}

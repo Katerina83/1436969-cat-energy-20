@@ -1,0 +1,36 @@
+.section-goods {
+  margin-bottom: 28px;
+}
+
+.section-goods__title {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.section-goods__subtitle {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special_dark-grey;
+}
+
+.section-goods__button {
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}

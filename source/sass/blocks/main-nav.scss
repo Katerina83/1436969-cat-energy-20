@@ -1,0 +1,35 @@
+.main-nav {
+  position: absolute;
+  margin-top: 16px;
+}
+
+.main-nav__toggle {
+  border: none;
+  background-color: $basic-white;
+  position: relative;
+  top: 10px;
+  left: 265px;
+}
+
+.main-nav__wrapper {
+  font-family: "oswaldmedium", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-black;
+  text-align: center;
+  display: none;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin-left: -30px;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: $basic-black;
+  display: block;
+}

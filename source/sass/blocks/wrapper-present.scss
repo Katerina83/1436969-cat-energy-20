@@ -7,9 +7,7 @@
 }
 
 .wrapper-present__subtitle {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  @include fontArial;
   font-size: 16px;
   line-height: 20px;
   align-items: center;

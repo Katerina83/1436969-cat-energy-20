@@ -1,7 +1,7 @@
 //body
 .page {
+  @include fontOswald;
   height: 100%;
-  font-family: "oswaldregular", "Arial", sans-serif;
 }
 
 .page__body {

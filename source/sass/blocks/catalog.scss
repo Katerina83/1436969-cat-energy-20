@@ -3,12 +3,9 @@
 }
 
 .catalog__title {
-  font-family: "oswaldregular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  @include fontOswald;
   font-size: 36px;
   line-height: 36px;
-  color: $basic-black;
 }
 
 .catalog__catalog-item {

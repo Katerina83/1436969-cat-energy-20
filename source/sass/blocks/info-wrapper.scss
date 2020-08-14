@@ -1,32 +1,48 @@
-.info-main__wrapper {
+.info-wrapper {
+  position: relative;
+  min-width: 320px;
   margin-bottom: 22px;
+  box-sizing: border-box;
+  text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  width: 320px;
+  height: 305px;
 }
 
-.info-main__title {
-  padding-top: 17px;
-  font-family: "oswaldmedium", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+.info-wrapper__title {
+  @include fontOswald;
+  padding: 27px 0 20px;
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
   width: 320px;
 }
 
-.info-main__subtitle {
+.info-wrapper__subtitle {
+  @include fontOswald;
+  margin-top: 5px;
+  margin-bottom: 28px;
   padding-bottom: 29px;
   padding-left: 30px;
-  font-family: "oswaldmedium", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: $basic-white;
   text-transform: uppercase;
 }
 
-.info-main__button {
+.info-wrapper__img {
+  display: block;
+  margin: 0 auto 5px;
+  max-width: 100%;
+}
+
+.info-wrapper__button {
   padding: 7px 44px;
+  text-decoration: none;
+  color: $basic-white;
+  background-color: $basic-green;
+  text-transform: uppercase;
 }

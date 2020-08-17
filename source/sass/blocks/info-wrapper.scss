@@ -1,6 +1,4 @@
 .info-wrapper {
-  position: relative;
-  min-width: 320px;
   margin-bottom: 22px;
   box-sizing: border-box;
   text-align: center;
@@ -8,8 +6,6 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
-  width: 320px;
-  height: 305px;
 }
 
 .info-wrapper__title {
@@ -18,7 +14,6 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
-  width: 320px;
 }
 
 .info-wrapper__subtitle {

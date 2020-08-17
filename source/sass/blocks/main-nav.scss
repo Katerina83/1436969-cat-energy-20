@@ -1,6 +1,5 @@
 .main-nav {
-  position: absolute;
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .main-nav__toggle {
@@ -9,6 +8,7 @@
   position: relative;
   top: -5px;
   left: 265px;
+  display: none;
 }
 
 .main-nav__wrapper {
@@ -18,7 +18,6 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  display: none;
 }
 
 .main-nav__list {

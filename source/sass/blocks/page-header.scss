@@ -1,13 +1,33 @@
 .page-header {
-  min-width: 320px;
+  display: block;
+  width: 100%;
+}
+
+.page-header__conteiner {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-header__wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.page-header__logo-link {
+  display: block;
+  width: 100%;
+  max-width: 190px;
 }
 
 .page-header__logo-pic {
-  position: relative;
-  top: 11px;
-  left: 20px;
-  cursor: pointer;
+  max-width: 100%;
 }

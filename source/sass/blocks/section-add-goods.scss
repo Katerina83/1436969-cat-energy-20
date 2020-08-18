@@ -3,10 +3,7 @@
 }
 
 .section-add-goods__title {
-  font-family: "oswaldregular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  @include fontOswald;
   font-size: 24px;
   line-height: 24px;
-  color: $basic-black;
 }

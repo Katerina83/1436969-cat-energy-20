@@ -1,0 +1,27 @@
+@mixin fontOswald {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  color: $basic-black;
+}
+
+@mixin fontArial {
+  font-family: $font-arial;
+  font-style: normal;
+  font-weight: normal;
+  color: $basic-black;
+}
+
+@mixin btnCatalog {
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  padding: 7px 44px;
+}

@@ -3,23 +3,17 @@
 }
 
 .description__section-title-program {
-  font-family: "oswaldregular", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  @include fontOswald;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: $basic-black;
   margin-bottom: 38px;
 }
 
 .description__section-subtitle {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  @include fontArial;
   font-size: $font-basic-size;
   line-height: $font-basic-line;
   text-align: center;
-  color: $basic-black;
   padding-bottom: 26px;
 }

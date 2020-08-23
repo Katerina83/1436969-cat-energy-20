@@ -18,11 +18,24 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+  }
 }
 
 .main-nav__list {
   list-style: none;
   margin-left: -30px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+  }
 }
 
 .site-list__link {

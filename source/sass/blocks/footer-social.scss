@@ -1,9 +1,16 @@
 .footer-social {
-  background-color: $basic-background;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
-.footer-social__list {
+.social__list {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding-right: 95px;
+  padding-left: 95px;
 }

@@ -1,8 +1,65 @@
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 400px;
+    margin: 0;
+  }
+}
+
+.footer-contacts--bg {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    background: $basic-background;
+    margin: 0;
+  }
+}
+
+.footer-contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 570px;
+    height: 201px;
+    background-color: $basic-white;
+    padding: 66px 89px 51px 76px;
+    position: relative;
+    top: 95px;
+    left: 110px;
+  }
+}
+
 .footer-contacts__contacts-subtitle {
   @include fontOswald;
   font-size: 16px;
   line-height: $font-basic-line;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    margin-right: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 87px;
+  }
 }
 
 .footer-contacts__contacts-location {
@@ -10,4 +67,40 @@
   font-size: $font-basic-size;
   line-height: 20px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    padding-top: 15px;
+  }
+}
+
+.page-footer__logo-icon {
+  text-align: center;
+  border-bottom: 1px solid $basic-border;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    border-bottom: none;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.copyright__link {
+  @include fontArial;
+  font-size: 16px;
+  line-height: $font-basic-line;
+  color: $special_dark-grey;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }

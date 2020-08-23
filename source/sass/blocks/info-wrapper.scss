@@ -1,4 +1,5 @@
 .info-wrapper {
+  margin-top: -36px;
   margin-bottom: 22px;
   box-sizing: border-box;
   text-align: center;
@@ -6,6 +7,30 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    margin-top: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      z-index: -1;
+      display: block;
+      top: -150px;
+      right: 0;
+      width: 50%;
+      height: 696px;
+    }
+  }
 }
 
 .info-wrapper__title {
@@ -14,6 +39,21 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 237px 41px 117px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 126px 737px 41px 150px;
+    text-align: left;
+  }
 }
 
 .info-wrapper__subtitle {
@@ -26,12 +66,48 @@
   line-height: 14px;
   color: $basic-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    padding: 0 367px 20px 118px;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 967px 20px 118px;
+  }
 }
 
 .info-wrapper__img {
   display: block;
   margin: 0 auto 5px;
   max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/index-can-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 709px;
+    height: 609px;
+    position: relative;
+    content: "";
+    top: -40px;
+    margin-bottom: -90px;
+    right: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    position: relative;
+    content: "";
+    top: -160px;
+    left: 140px;
+    margin-bottom: -90px;
+  }
 }
 
 .info-wrapper__button {
@@ -40,4 +116,20 @@
   color: $basic-white;
   background-color: $basic-green;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 14px 26px;
+    margin-left: -280px;
+    position: relative;
+    content: "";
+    top: -520px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    content: "";
+    top: -380px;
+    left: -300px;
+  }
 }

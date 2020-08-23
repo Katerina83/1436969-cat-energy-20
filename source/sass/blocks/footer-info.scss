@@ -1,0 +1,15 @@
+.footer-info {
+  background-color: $basic-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 39px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 53px 30px;
+  }
+}

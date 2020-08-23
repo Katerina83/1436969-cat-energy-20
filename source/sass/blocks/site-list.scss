@@ -1,4 +1,37 @@
 .site-list__link {
+  @include fontOswald;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   padding-bottom: 10px;
   padding-top: 10px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+}
+
+.site-list__item {
+  border-top: 1px solid $basic-color-line;
+  border-bottom: 1px solid $basic-color-line;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: auto;
+    display: inline-block;
+  }
+}
+
+.site-list__link--color {
+  color: $special-black;
 }

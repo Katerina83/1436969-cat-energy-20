@@ -1,12 +1,88 @@
+.catalog-item {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 370px;
+    background-color: $basic-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 245px;
+    height: 365px;
+  }
+}
+
+.catalog-item__img {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 58px;
+  margin-right: 46px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 161px;
+    text-align: center;
+    margin-left: 78px;
+    margin-right: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
 .catalog-item__title {
   @include fontOswald;
   font-size: 16px;
   line-height: 20px;
+  padding-left: 30px;
+  position: relative;
+  top: -5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.catalog-item__goods {
+  position: relative;
+  top: 20px;
+
+  @media (min-width: $tablet-width) {
+    left: 60px;
+    top: -20px;
+  }
 }
 
 .catalog-item__table {
   margin-top: 14px;
-  margin-bottom: 22px;
+  position: relative;
+  left: 150px;
+  top: -40px;
+
+  @media (min-width: $tablet-width) {
+    left: 38px;
+    top: -20px;
+  }
+}
+
+.catalog-item__row {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    border-bottom: 1px solid $basic-border-catalog;
+    padding-bottom: 9px;
+    padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 166px;
+  }
 }
 
 .catalog-item__column {
@@ -18,4 +94,13 @@
 
 .catalog-item__button {
   @include btnCatalog;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 93px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px;
+  }
 }

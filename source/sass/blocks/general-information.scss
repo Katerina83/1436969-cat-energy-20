@@ -1,0 +1,99 @@
+.general-information {
+  border: none;
+  border-bottom: 1px solid $basic-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 70px;
+  }
+}
+
+.general-information__label,
+.general-information__input {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.general-information__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
+}
+
+.general-information__input-name {
+  padding: 13px 160px 13px 15px;
+  border: 1px solid $basic-border-input;
+  box-sizing: border-box;
+  width: 229px;
+  height: 45px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 487px 11px 19px;
+    width: 568px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 424px 11px 19px;
+    width: 506px;
+  }
+}
+
+.general-information__input-weight {
+  padding: 13px 181px 13px 15px;
+  border: 1px solid $basic-border-input;
+  box-sizing: border-box;
+  width: 204px;
+  height: 45px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 508px 11px 19px;
+    width: 536px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 448px 11px 19px;
+    width: 475px;
+  }
+}
+
+.general-information__input-age {
+  padding: 13px 149px 13px 15px;
+  border: 1px solid $basic-border-input;
+  box-sizing: border-box;
+  width: 172px;
+  height: 45px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 460px 11px 19px;
+    width: 490px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 411px 11px 19px;
+    width: 436px;
+  }
+}

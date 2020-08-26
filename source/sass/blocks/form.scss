@@ -1,0 +1,10 @@
+.form__contacts {
+  border: none;
+}
+
+.form__button {
+  @include btnCatalog;
+  line-height: 20px;
+  padding: 7px 78px;
+  border: none;
+}

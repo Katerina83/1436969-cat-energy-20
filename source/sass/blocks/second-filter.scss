@@ -1,0 +1,29 @@
+.second-filter {
+  border: none;
+}
+
+.second-filter__subtitle {
+  @include fontOswald;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.second-filter__label,
+.second-filter__input {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.second-filter__label {
+  display: flex;
+  width: 281px;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin: 25px 0;
+}
+
+.second-filter__input {
+  margin-right: 15px;
+}

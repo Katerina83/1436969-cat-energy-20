@@ -10,8 +10,7 @@
 }
 
 .contacts-wrapper {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   width: 281px;
   align-items: baseline;
 
@@ -34,7 +33,6 @@
 
 .contacts__inpiut-email {
   border: 1px solid $basic-border-input;
-  box-sizing: border-box;
   width: 219px;
   height: 45px;
   padding: 13px 51px 13px 15px;
@@ -49,7 +47,6 @@
 
 .contacts__inpiut-phone {
   border: 1px solid $basic-border-input;
-  box-sizing: border-box;
   width: 204px;
   height: 45px;
   padding: 13px 68px 13px 15px;

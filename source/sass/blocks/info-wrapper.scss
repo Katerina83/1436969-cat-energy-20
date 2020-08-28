@@ -1,7 +1,6 @@
 .info-wrapper {
   margin-top: -36px;
   margin-bottom: 22px;
-  box-sizing: border-box;
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -87,23 +86,12 @@
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/index-can-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 709px;
-    height: 609px;
-    position: relative;
-    content: "";
     top: -40px;
     margin-bottom: -90px;
     right: -50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 552px;
-    height: 499px;
-    position: relative;
-    content: "";
     top: -160px;
     left: 140px;
     margin-bottom: -90px;

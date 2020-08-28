@@ -12,13 +12,11 @@
 }
 
 .example__subtitle-wrapper {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   margin-left: 50px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
-    flex-wrap: wrap;
     margin-top: 10px;
   }
 }
@@ -71,9 +69,7 @@
 }
 
 .example__wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include flex;
   margin: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -85,18 +81,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    box-sizing: border-box;
+    @include flex;
     width: 412px;
     margin-left: 110px;
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 
 .example__subtitle-module {
-  display: flex;
-  flex-direction: column;
-
+  @include flex;
   @include fontArial;
   font-size: 12px;
   line-height: 12px;
@@ -105,7 +97,6 @@
   padding-top: 14px;
   border: 1px solid $basic-border-catalog;
   border-radius: 5px;
-  box-sizing: border-box;
   width: 124px;
   height: 56px;
 
@@ -164,9 +155,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include flex;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -205,8 +195,7 @@
 }
 
 .example__slider-btn {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   margin: 0 58px;
   padding-bottom: 30px;
 

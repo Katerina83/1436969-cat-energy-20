@@ -1,6 +1,5 @@
 .footer-contacts {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   margin: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -24,17 +23,14 @@
 }
 
 .footer-contacts__wrapper {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+    @include flex;
     width: 570px;
     height: 201px;
     background-color: $basic-white;
@@ -76,20 +72,10 @@
   }
 }
 
-.page-footer__logo-icon {
-  text-align: center;
-  border-bottom: 1px solid $basic-border;
-  padding-bottom: 32px;
 
-  @media (min-width: $tablet-width) {
-    text-align: start;
-    border-bottom: none;
-  }
-}
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   margin: 20px;
 }
 

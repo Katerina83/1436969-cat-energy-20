@@ -1,16 +1,14 @@
 .footer-social {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     padding-right: 0;
     padding-left: 0;
   }
 }
 
 .social__list {
+  @include flex;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
   padding-right: 95px;
   padding-left: 95px;
 }

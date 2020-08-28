@@ -8,8 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     margin: 0 110px;
     margin-top: -50px;
   }
@@ -25,7 +24,6 @@
     width: 708px;
     height: 372px;
     margin-bottom: 30px;
-    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,14 +132,10 @@
   left: 7px;
 
   @media (min-width: $tablet-width) {
-    width: 140px;
-    height: 192px;
     left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 70px;
-    height: 97px;
     left: 20px;
   }
 }
@@ -152,8 +146,6 @@
   top: 15px;
 
   @media (min-width: $tablet-width) {
-    width: 268px;
-    height: 122px;
     left: -50px;
     top: 40px;
   }

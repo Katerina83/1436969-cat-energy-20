@@ -24,8 +24,7 @@
 }
 
 .general-information__wrapper {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   width: 281px;
   align-items: baseline;
 
@@ -41,7 +40,6 @@
 .general-information__input-name {
   padding: 13px 160px 13px 15px;
   border: 1px solid $basic-border-input;
-  box-sizing: border-box;
   width: 229px;
   height: 45px;
   margin-bottom: 14px;
@@ -61,7 +59,6 @@
 .general-information__input-weight {
   padding: 13px 181px 13px 15px;
   border: 1px solid $basic-border-input;
-  box-sizing: border-box;
   width: 204px;
   height: 45px;
   margin-bottom: 14px;
@@ -81,7 +78,6 @@
 .general-information__input-age {
   padding: 13px 149px 13px 15px;
   border: 1px solid $basic-border-input;
-  box-sizing: border-box;
   width: 172px;
   height: 45px;
   margin-bottom: 14px;

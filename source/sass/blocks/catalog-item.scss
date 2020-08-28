@@ -6,21 +6,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    box-sizing: border-box;
     width: 245px;
     height: 365px;
   }
 }
 
 .catalog-item__img {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   margin-left: 58px;
   margin-right: 46px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    box-sizing: border-box;
     width: 161px;
     text-align: center;
     margin-left: 78px;
@@ -69,8 +66,7 @@
 }
 
 .catalog-item__row {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   width: 120px;
 
   @media (min-width: $tablet-width) {

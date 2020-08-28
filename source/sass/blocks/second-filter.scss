@@ -17,7 +17,7 @@
 }
 
 .second-filter__label {
-  display: flex;
+  @include flex;
   width: 281px;
   align-items: baseline;
   justify-content: flex-start;

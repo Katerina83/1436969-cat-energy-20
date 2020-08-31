@@ -64,13 +64,14 @@
   line-height: 16px;
   text-align: center;
   color: $special_dark-grey;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     padding: 0 90px 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 50px;
+    padding: 0 50px 40px;
   }
 }
 
@@ -82,17 +83,20 @@
   text-align: center;
   text-transform: uppercase;
   color: $special_dark-grey;
-  padding: 20px 94px;
+  padding: 10px 94px;
   border: none;
+  width: 169px;
+  height: 40px;
+  text-decoration: none;
+  background: $basic-background;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 79px;
+    padding: 10px 79px;
     margin-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 50px;
+    padding: 10px 40px;
     margin-left: 30px;
-    margin-top: 30px;
   }
 }

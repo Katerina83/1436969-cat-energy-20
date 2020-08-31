@@ -1,12 +1,23 @@
 .selection {
-  margin: 0 20px;
-
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    @include conteiner (30px, 30px, 768px);
+    margin-top: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    @include conteiner (110px, 110px, 1440px);
+    margin-top: 90px;
+  }
+}
+
+.selection__form-profile {
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    padding-left: 0;
   }
 }
 
@@ -14,6 +25,9 @@
   @include fontOswald;
   font-size: 36px;
   line-height: 36px;
+  padding-bottom: 37px;
+
+  @include conteiner (20px, 20px, 320px);
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -24,19 +38,19 @@
 .selection__form-subtitle {
   @include fontOswald;
   text-transform: uppercase;
+  padding-bottom: 37px;
+
+  @include conteiner (20px, 20px, 320px);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 323px;
     height: 60px;
-    margin-left: 40px;
+    padding: 0;
     margin-bottom: 66px;
+    margin-left: 30px;
   }
-}
-
-.selection__form-profile {
-  margin-left: 40px;
 }
 
 .selection__required-fields {

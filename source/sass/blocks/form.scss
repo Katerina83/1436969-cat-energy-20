@@ -2,9 +2,30 @@
   border: none;
 }
 
+.form__btn {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+  }
+}
+
 .form__button {
   @include btnCatalog;
   line-height: 20px;
   padding: 7px 78px;
   border: none;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 45px;
+    width: 282px;
+    height: 52px;
+  }
+}
+
+.form__column {
+  @media (min-width: $desktop-width) {
+    @include grid;
+  }
 }

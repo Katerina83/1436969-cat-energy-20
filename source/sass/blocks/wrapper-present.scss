@@ -1,10 +1,8 @@
 .wrapper-present {
-  margin: 39px 20px 35px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   width: 280px;
   height: 289px;
-  border-top: 1px solid $basic-border-catalog;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -25,6 +23,35 @@
   }
 }
 
+.wrapper-present__container {
+  @media (min-width: $tablet-width) {
+    @include flex;
+    flex-wrap: nowrap;
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+  }
+}
+
+.wrapper-present__img {
+  margin: 50px 100px;
+  fill: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 83px;
+    position: absolute;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 50px 75px;
+  }
+}
+
 .wrapper-present__subtitle {
   @include fontArial;
   font-size: 16px;
@@ -32,10 +59,10 @@
   align-items: center;
   text-align: center;
   color: $basic-white;
-  padding: 186px 60px 43px 58px;
+  padding: 6px 60px 43px 58px;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 125px 70px 423px;
+    padding: 50px 125px 70px 423px;
     text-align: left;
   }
 

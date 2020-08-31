@@ -1,5 +1,5 @@
 .catalog {
-  @include conteiner (20px, 20px, 320px);
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     @include conteiner (30px, 30px, 768px);
@@ -17,6 +17,7 @@
     grid-column-gap: 60px;
     grid-row-gap: 140px;
     margin-bottom: 68px;
+    margin-top: 164px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +36,7 @@
   @include fontOswald;
   font-size: 36px;
   line-height: 36px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -43,10 +45,8 @@
 }
 
 .catalog__catalog-item {
-  margin-top: 19px;
+  border-top: 1px solid $basic-color-line;
   margin-bottom: 25px;
-  border-top: 1px solid $special-gray;
-  border-bottom: 1px solid $special-gray;
 
   @media (min-width: $tablet-width) {
     margin: 0;

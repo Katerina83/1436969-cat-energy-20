@@ -5,10 +5,3 @@
     padding-left: 0;
   }
 }
-
-.social__list {
-  @include flex;
-  list-style: none;
-  padding-right: 95px;
-  padding-left: 95px;
-}

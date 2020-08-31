@@ -18,5 +18,14 @@
   width: 280px;
   height: 150px;
   margin-bottom: 27px;
-  overflow:  hidden;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }

@@ -31,6 +31,12 @@
   flex-wrap: wrap;
 }
 
+@mixin grid {
+  display: grid;
+  grid-template-columns: 569px 569px;
+  column-gap: 80px;
+}
+
 @mixin conteiner ($left, $right, $minwidth) {
   margin: 0 auto;
   padding-left: $left;
@@ -38,3 +44,13 @@
   min-width: $minwidth;
 }
 
+@mixin background-namber {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url("../img/one.png");
+  background-repeat: no-repeat;
+  background-position: 115px 40px;
+  height: 280px;
+  margin-bottom: 37px;
+}

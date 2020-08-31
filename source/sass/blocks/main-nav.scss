@@ -7,7 +7,7 @@
   background-color: $basic-white;
   position: relative;
   top: -5px;
-  left: 265px;
+  left: 255px;
   display: none;
 }
 
@@ -23,12 +23,18 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
+    width: 439px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    margin-top: 20px;
   }
 }
 
 .main-nav__list {
   list-style: none;
-  margin-left: -30px;
+  padding-left: 0;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {

@@ -1,0 +1,22 @@
+.copyright__link {
+  @include fontArial;
+  font-size: 16px;
+  line-height: $font-basic-line;
+  color: $special_dark-grey;
+  text-decoration: none;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
+}
+
+
+.copyright__img {
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-top: -5px;
+  }
+}

@@ -1,0 +1,92 @@
+.footer-contacts {
+  @include flex;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 400px;
+    margin: 0;
+  }
+}
+
+.footer-contacts--bg {
+  @media (min-width: $mobile-width) and (max-width: 1439px) {
+    background: $basic-background;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
+  }
+}
+
+.footer-contacts__wrapper {
+  @include flex;
+  flex-wrap: nowrap;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex;
+    flex-wrap: nowrap;
+    width: 570px;
+    height: 201px;
+    background-color: $basic-white;
+    padding: 66px 89px 51px 76px;
+    position: relative;
+    top: 95px;
+    left: 110px;
+  }
+}
+
+.footer-contacts__wrapper--bg {
+  @media (min-width: $mobile-width) and (max-width: 737px) {
+    margin: 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 70px;
+  }
+}
+
+.footer-contacts__contacts-subtitle {
+  @include fontOswald;
+  font-size: 16px;
+  line-height: $font-basic-line;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    margin-right: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 87px;
+  }
+}
+
+.footer-contacts__contacts-location {
+  @include fontArial;
+  font-size: $font-basic-size;
+  line-height: 20px;
+  color: $special_dark-grey;
+  padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    padding-top: 15px;
+  }
+}

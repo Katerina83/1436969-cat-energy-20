@@ -1,4 +1,6 @@
 .info-wrapper {
+  margin-right: 0;
+  margin-left: 0;
   margin-top: -36px;
   margin-bottom: 22px;
   text-align: center;
@@ -14,6 +16,8 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    margin-top: 0;
+    height: 656px;
 
     &::before {
       position: absolute;
@@ -60,7 +64,6 @@
   margin-top: 5px;
   margin-bottom: 28px;
   padding-bottom: 29px;
-  padding-left: 30px;
   font-size: 14px;
   line-height: 14px;
   color: $basic-white;
@@ -81,20 +84,26 @@
 }
 
 .info-wrapper__img {
+  position: relative;
   display: block;
-  margin: 0 auto 5px;
-  max-width: 100%;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     top: -40px;
     margin-bottom: -90px;
-    right: -50px;
+    width: 700px;
+    height: 600px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    top: -160px;
-    left: 140px;
-    margin-bottom: -90px;
+    width: 550px;
+    height: 500px;
+    top: -320px;
+    left: 540px;
   }
 }
 

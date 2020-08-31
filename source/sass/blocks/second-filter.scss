@@ -27,3 +27,19 @@
 .second-filter__input {
   margin-right: 15px;
 }
+
+
+.second-filter__wrapper {
+  @media (min-width: $tablet-width) {
+    @include grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 124px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex;
+    flex-wrap: nowrap;
+    width: 1200px;
+  }
+}

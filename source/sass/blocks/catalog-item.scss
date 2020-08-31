@@ -1,7 +1,7 @@
 .catalog-item {
   @media (min-width: $tablet-width) {
     width: 324px;
-    height: 370px;
+    height: 380px;
     background-color: $basic-background;
   }
 
@@ -11,17 +11,19 @@
   }
 }
 
+.catalog-item__wrapper {
+  @include conteiner (20px, 20px, 320px);
+}
+
 .catalog-item__img {
   @include flex;
-  margin-left: 58px;
-  margin-right: 46px;
+  flex-wrap: nowrap;
+  margin: 0 20px 22px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     width: 161px;
     text-align: center;
-    margin-left: 78px;
-    margin-right: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,36 +35,25 @@
   @include fontOswald;
   font-size: 16px;
   line-height: 20px;
-  padding-left: 30px;
-  position: relative;
+  width: 76px;
   top: -5px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    width: 140px;
+    margin-left: 50px;
+    margin-top: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
   }
 }
 
-.catalog-item__goods {
-  position: relative;
-  top: 20px;
-
-  @media (min-width: $tablet-width) {
-    left: 60px;
-    top: -20px;
-  }
-}
-
-.catalog-item__table {
-  margin-top: 14px;
-  position: relative;
-  left: 150px;
-  top: -40px;
-
-  @media (min-width: $tablet-width) {
-    left: 38px;
-    top: -20px;
-  }
+.catalog-item__table-wrapper {
+  @include flex;
+  flex-direction: column;
 }
 
 .catalog-item__row {
@@ -93,10 +84,24 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 93px;
-    margin-left: 40px;
+    margin-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 10px 53px;
+  }
+}
+
+.catalog-item__goods {
+  @media (min-width: $tablet-width) {
+    margin-left: -35px;
+    margin-top: -40px;
+  }
+}
+
+.catalog-item__goods-big {
+  @media (min-width: $tablet-width) {
+    margin-left: -35px;
+    margin-top: -75px;
   }
 }

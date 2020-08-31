@@ -4,6 +4,12 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $basic-border;
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 196px;
   }
 }
 
@@ -12,6 +18,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
   @include flex;
   align-items: baseline;
   justify-content: flex-start;
@@ -23,6 +30,10 @@
     width: 615px;
     padding: 0;
     padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 

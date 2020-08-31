@@ -1,16 +1,40 @@
 .section-goods {
-  margin: 79px 20px 28px;
+  border-top: 1px solid $basic-color-line;
+  border-bottom: 1px solid $basic-color-line;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $basic-border-catalog;
     width: 324px;
-    height: 370px;
+    height: 380px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 365px;
+  }
+}
+
+.section-goods__wrapper {
+  margin: 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.section-goods__img {
+  margin: 26px 120px 23px;
+  fill: $basic-border-catalog;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 26px 90px 23px;
   }
 }
 
@@ -23,14 +47,14 @@
   color: $special-black;
 
   @media (min-width: $tablet-width) {
-    padding: 161px 95px 23px;
+    padding: 49px 95px 23px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 25px;
-    padding: 161px 47px 23px;
+    padding: 40px 47px 23px;
   }
 }
 
@@ -42,13 +66,11 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding: 0 90px 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px;
   }
 }
 
@@ -60,7 +82,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $special_dark-grey;
-  padding: 20px 74px;
+  padding: 20px 94px;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -71,5 +93,6 @@
   @media (min-width: $desktop-width) {
     padding: 20px 50px;
     margin-left: 30px;
+    margin-top: 30px;
   }
 }

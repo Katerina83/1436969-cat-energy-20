@@ -1,12 +1,21 @@
 .form__contacts {
   border: none;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .form__btn {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 565px;
+    margin: 0 120px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (110px, 110px, 1440px);
   }
 }
 
@@ -21,11 +30,22 @@
     padding: 13px 45px;
     width: 282px;
     height: 52px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 508px;
+    padding: 13px 188px;
   }
 }
 
 .form__column {
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
   @media (min-width: $desktop-width) {
     @include grid;
+    @include conteiner (110px, 110px, 1440px);
   }
 }

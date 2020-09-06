@@ -24,6 +24,22 @@
   }
 }
 
+.general-information__input {
+    border: 1px solid $basic-border-input;
+
+    &:hover {
+      border: 1px solid $basic-border-catalog;
+    }
+
+    &:active {
+      border: 2px solid $special_dark-grey;
+    }
+
+    &:invalid {
+      border: 2px solid $basic-red;
+    }
+}
+
 .general-information__wrapper {
   @include flex;
   width: 281px;
@@ -41,7 +57,6 @@
 
 .general-information__input-name {
   padding: 13px 160px 13px 15px;
-  border: 1px solid $basic-border-input;
   width: 229px;
   height: 45px;
   margin-bottom: 14px;

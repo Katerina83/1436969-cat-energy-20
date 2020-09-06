@@ -1,11 +1,25 @@
 .second-filter {
   border: none;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .second-filter__subtitle {
   @include fontOswald;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (110px, 110px, 1440px);
+    margin-bottom: 57px;
+  }
 }
 
 .second-filter__label,
@@ -17,29 +31,109 @@
 }
 
 .second-filter__label {
-  @include flex;
   width: 281px;
   align-items: baseline;
   justify-content: flex-start;
   margin: 25px 0;
+  position: relative;
+  padding-left: 45px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .second-filter__input {
-  margin-right: 15px;
+  display: none;
 }
 
-
 .second-filter__wrapper {
+  @include flex;
+}
+
+.second-filter__input + .second-filter__label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $basic-border-catalog;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.second-filter__input:checked + .second-filter__label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 3px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.second-filter__container {
   @media (min-width: $tablet-width) {
     @include grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 124px;
     margin-bottom: 50px;
+    padding-left: 70px;
   }
 
   @media (min-width: $desktop-width) {
     @include flex;
     flex-wrap: nowrap;
     width: 1200px;
+    column-gap: 0;
+    @include conteiner (110px, 110px, 1440px);
+    margin-bottom: 45px;
+  }
+}
+
+.second-filter__subtitle-span {
+  background-color: $basic-white;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 15px;
+  }
+}
+
+.second-filter__wrapper-subtitle {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    height: 3px;
+    margin-top: 4px;
+    background-color: $basic-dark-green;
+    top: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 0;
+      width: 100%;
+      top: 15px;
+    }
   }
 }

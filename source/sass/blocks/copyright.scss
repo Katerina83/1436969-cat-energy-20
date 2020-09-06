@@ -4,7 +4,10 @@
   line-height: $font-basic-line;
   color: $special_dark-grey;
   text-decoration: none;
-  margin-left: 20px;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-right: 22px;
@@ -13,7 +16,16 @@
 
 
 .copyright__img {
-  margin-right: 20px;
+  margin-top: -10px;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 0;

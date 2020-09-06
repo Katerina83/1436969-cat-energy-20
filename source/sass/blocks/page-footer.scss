@@ -1,5 +1,9 @@
 .page-footer {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -150px;
+  }
 }
 
 .page-footer__copyright {

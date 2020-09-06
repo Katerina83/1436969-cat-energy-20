@@ -37,11 +37,11 @@
   column-gap: 80px;
 }
 
-@mixin conteiner ($left, $right, $minwidth) {
+@mixin conteiner ($left, $right, $width) {
   margin: 0 auto;
   padding-left: $left;
   padding-right: $right;
-  min-width: $minwidth;
+  width: $width;
 }
 
 @mixin background-namber {

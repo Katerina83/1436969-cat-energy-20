@@ -1,6 +1,13 @@
 .footer-info {
   background-color: $basic-background;
+  @include conteiner (20px, 20px, 320px);
 
+  @media (min-width: $tablet-width) {
+    @include conteiner (0, 0, auto);
+  }
+}
+
+.footer-info__container {
   @include flex;
   flex-direction: column;
   padding-top: 39px;
@@ -9,14 +16,27 @@
   @media (min-width: $tablet-width) {
     @include flex;
     flex-direction: row;
-    padding: 53px 30px;
+    flex-wrap: nowrap;
+
+    @include conteiner (30px, 30px, 768px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (110px, 110px, 1440px);
   }
 }
 
 .footer-info__logo-icon {
   text-align: center;
-  border-bottom: 1px solid $basic-border;
   padding-bottom: 32px;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: start;

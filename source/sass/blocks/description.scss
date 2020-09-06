@@ -1,23 +1,24 @@
 .description {
-  @include conteiner (20px, 20px, 320px);
-
   @media (min-width: $tablet-width) {
-    @include conteiner (30px, 30px, 768px);
-    width: 708px;
     border-bottom: 1px solid $basic-color-line;
   }
 
   @media (min-width: $desktop-width) {
-    @include conteiner (110px, 110px, 1440px);
     border-bottom: none;
     margin-bottom: 69px;
   }
 }
 
 .description__section-program-description {
+  @include conteiner (20px, 20px, 320px);
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    @include conteiner (30px, 30px, 768px);
+  }
+
   @media (min-width: $desktop-width) {
+    @include conteiner (110px, 110px, 1440px);
     margin-bottom: -100px;
   }
 }

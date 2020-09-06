@@ -1,11 +1,32 @@
 .comment {
   border: none;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .comment__subtitle {
   @include fontOswald;
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    @include conteiner (30px, 30px, 768px);
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include conteiner (110px, 110px, 1440px);
+  }
+}
+
+.comment__textarea-wrapper {
+  @media (min-width: $desktop-width) {
+    @include conteiner (110px, 110px, 1440px);
+  }
 }
 
 .comment__textarea {
@@ -23,9 +44,47 @@
   @media (min-width: $tablet-width) {
     width: 630px;
     height: 174px;
+    margin-left: 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+  }
+}
+
+.comment__subtitle-span {
+  background-color: $basic-white;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+
+.comment_subtitle-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    height: 3px;
+    margin-top: 4px;
+    background-color: $basic-dark-green;
+    top: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: 0;
+      width: 100%;
+      top: 15px;
+    }
   }
 }

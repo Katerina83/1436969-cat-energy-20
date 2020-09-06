@@ -6,7 +6,7 @@
   border: none;
   background-color: $basic-white;
   position: relative;
-  top: -5px;
+  top: -35px;
   left: 255px;
   display: none;
 }
@@ -18,17 +18,17 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    width: 439px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 480px;
-    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -36,11 +36,15 @@
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4px;
+    @include flex;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 

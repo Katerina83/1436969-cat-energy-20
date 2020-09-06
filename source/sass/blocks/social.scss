@@ -36,3 +36,16 @@
     height: 23px;
   }
 }
+
+.social__vkontakte,
+.social__insta,
+.social__fb {
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
+}

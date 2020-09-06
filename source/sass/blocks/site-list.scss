@@ -39,10 +39,10 @@
 
 .site-list__link--active {
   @media (min-width: $tablet-width) {
-  border-bottom: 2px solid $basic-green;
-  padding-bottom: 5px;
-  cursor: pointer;
-  padding-left: 0;
+    border-bottom: 2px solid $basic-green;
+    padding-bottom: 5px;
+    cursor: pointer;
+    padding-left: 0;
   }
 }
 

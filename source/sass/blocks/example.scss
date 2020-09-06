@@ -8,7 +8,7 @@
 
 .example__container {
   @media (min-width: $desktop-width) {
-  @include conteiner (110px, 110px, 1440px);
+    @include conteiner (110px, 110px, 1440px);
   }
 }
 

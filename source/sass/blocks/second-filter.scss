@@ -98,6 +98,7 @@
     flex-wrap: nowrap;
     width: 1200px;
     column-gap: 0;
+
     @include conteiner (110px, 110px, 1440px);
     margin-bottom: 45px;
   }

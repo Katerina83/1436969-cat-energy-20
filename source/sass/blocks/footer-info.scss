@@ -1,5 +1,6 @@
 .footer-info {
   background-color: $basic-background;
+
   @include conteiner (20px, 20px, 320px);
 
   @media (min-width: $tablet-width) {

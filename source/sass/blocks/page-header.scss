@@ -2,7 +2,7 @@
   display: block;
 
   @media (min-width: $desktop-width) {
-  @include conteiner (110px, 110px, 1440px);
+    @include conteiner (110px, 110px, 1440px);
   }
 }
 
@@ -12,7 +12,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -42,10 +41,6 @@
 
 .page-header__logo {
   @include flex;
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .page-header__logo-link {

@@ -18,6 +18,8 @@
     @include flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-top: 59px;
+    padding-bottom: 42px;
 
     @include conteiner (30px, 30px, 768px);
   }

@@ -98,7 +98,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 162px 162px 295px;
-    margin-bottom: 255px;
+    margin-bottom: 78px;
     column-gap: 42px;
   }
 
@@ -208,15 +208,27 @@
 
 .example__wrapper-slider {
   @media (min-width: $tablet-width) {
-    background: $basic-gray;
     width: 100%;
-    height: 462px;
+    height: 632px;
+    background: linear-gradient(to top, $basic-gray 70%, $basic-white 40%);
   }
 
   @media (min-width: $desktop-width) {
     background: none;
     height: 0;
   }
+}
+
+.example_befor-after {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+.example__img-div {
+  position: relative;
 }
 
 .example__button-slider {
@@ -247,24 +259,35 @@
   margin-left: 3px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: -200px;
+    position: absolute;
+    top: -20px;
     width: 665px;
     height: 520px;
     left: 55px;
+    clip: rect(auto, 325px, auto, auto);
   }
 
   @media (min-width: $desktop-width) {
     left: 0;
     top: 0;
     margin: 0;
+    clip: rect(auto, 375px, auto, auto);
   }
 }
 
 .example__img-after {
-  width: 300px;
-  height: 232px;
-  display: none;
+  @media (min-width: $tablet-width) {
+    width: 665px;
+    height: 520px;
+    clip: rect(auto, auto, auto, 324px);
+    position: absolute;
+    left: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    clip: rect(auto, auto, auto, 344px);
+    left: 0;
+  }
 }
 
 .example__slider-btn {
@@ -274,14 +297,14 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -220px;
+    top: 508px;
     margin: 0 97px;
     padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    top: 0;
+    top: 520px;
     left: 0;
     margin: 0;
     margin-left: 78px;

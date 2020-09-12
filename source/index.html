@@ -207,16 +207,20 @@
               <section class="example__slider">
                 <h2 class="visually-hidden">преображение кота</h2>
                 <div class="example_befor-after">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                      <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                        <img class="example__img-befor" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="кот ДО">
-                  </picture>
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                      <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                        <img class="example__img-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="кот после">
-                  </picture>
+                  <div class="example__img-div">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                        <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                          <img class="example__img-befor" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="кот ДО">
+                    </picture>
+                  </div>
+                  <div class="example__img-div">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                        <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                          <img class="example__img-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="кот после">
+                    </picture>
+                  </div>
                 </div>
                 <div class="example__slider-btn">
                   <button class="example__button-slider example__toggle--before">было</button>

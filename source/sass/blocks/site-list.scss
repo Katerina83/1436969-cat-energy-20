@@ -1,11 +1,3 @@
-.site-list {
-  border-bottom: 1px solid $basic-color-line;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
 .site-list__item {
   border-top: 1px solid $basic-color-line;
 
@@ -14,6 +6,14 @@
     width: auto;
     display: inline-block;
     margin-left: 33px;
+  }
+}
+
+.site-list__--border {
+  border-bottom: 1px solid $basic-color-line;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 

@@ -1,9 +1,17 @@
 .comment {
   border: none;
   padding-right: 0;
+  margin-top: -18px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -11,19 +19,31 @@
   @include fontOswald;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 34px;
+  margin-top: 0;
+  padding-left: 5px;
 
   @media (min-width: $tablet-width) {
     @include conteiner (30px, 30px, 768px);
     margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    @include conteiner (110px, 110px, 1440px);
+    @include conteiner (70px, 110px, 1440px);
+    margin-bottom: 75px;
   }
 }
 
 .comment__textarea-wrapper {
+  margin-top: 35px;
+  margin-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+    margin-bottom: 39px;
+  }
+
   @media (min-width: $desktop-width) {
     @include conteiner (110px, 110px, 1440px);
   }
@@ -34,17 +54,19 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 13px 12px 121px;
+  padding: 10px 13px;
   border: 1px solid $basic-border-input;
   width: 280px;
   height: 150px;
-  margin-bottom: 27px;
-  overflow: hidden;
+  overflow: auto;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     width: 630px;
     height: 174px;
-    margin-left: 70px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 9px 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,8 +79,8 @@
   display: inline-block;
 
   @media (min-width: $tablet-width) {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 45px;
+    padding-left: 38px;
   }
 }
 

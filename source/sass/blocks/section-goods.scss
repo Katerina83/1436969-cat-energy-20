@@ -2,6 +2,7 @@
   border-top: 1px solid $basic-color-line;
   border-bottom: 1px solid $basic-color-line;
   margin-bottom: 25px;
+  margin-top: -3px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $basic-border-catalog;
@@ -18,25 +19,30 @@
 }
 
 .section-goods__wrapper {
-  margin: 25px 20px;
+  margin: 0 25px 38px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
   }
 }
 
 .section-goods__img {
-  margin: 26px 120px 23px;
+  margin: 26px 120px 17px;
   fill: $basic-border-catalog;
 
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
+    margin: 26px 132px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 26px 90px 23px;
+    margin: 0 92px 3px;
   }
 }
 
@@ -47,10 +53,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $special-black;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 49px 95px 23px;
-    margin: 0;
+    padding: 49px 95px 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,14 +72,18 @@
   line-height: 16px;
   text-align: center;
   color: $special_dark-grey;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  margin-top: 7px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 90px 35px;
+    padding: 0 70px 93px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 50px 40px;
+    padding: 0 30px 90px;
   }
 }
 
@@ -85,12 +95,13 @@
   text-align: center;
   text-transform: uppercase;
   color: $special_dark-grey;
-  padding: 10px 94px;
+  padding: 9px 87px;
   border: none;
   width: 169px;
   height: 40px;
-  text-decoration: none;
   background: $basic-background;
+
+  @include link;
 
   &:hover {
     background: $special-gray;
@@ -103,11 +114,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 79px;
-    margin-left: 50px;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 40px;
+    padding: 10px 45px;
     margin-left: 30px;
   }
 }

@@ -7,7 +7,11 @@
     border: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
   }
 }
 
@@ -26,6 +30,7 @@
 
 .general-information__input {
   border: 1px solid $basic-border-input;
+  outline: none;
 
   &:hover {
     border: 1px solid $basic-border-catalog;
@@ -56,13 +61,13 @@
 }
 
 .general-information__input-name {
-  padding: 13px 160px 13px 15px;
+  padding: 9px 160px 13px 10px;
   width: 229px;
   height: 45px;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 487px 11px 19px;
+    padding: 11px 487px 13px 19px;
     width: 568px;
     height: 52px;
   }
@@ -70,20 +75,22 @@
   @media (min-width: $desktop-width) {
     padding: 11px 424px 11px 19px;
     width: 506px;
+    margin-bottom: 20px;
   }
 }
 
 .general-information__input-weight {
-  padding: 13px 181px 13px 15px;
+  padding: 9px 181px 13px 12px;
   border: 1px solid $basic-border-input;
   width: 204px;
   height: 45px;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 508px 11px 19px;
+    padding: 18px 508px 13px 19px;
     width: 536px;
     height: 52px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,21 +99,26 @@
   }
 }
 
+.general-information__label-age {
+  display: none;
+}
+
 .general-information__input-age {
-  padding: 13px 149px 13px 15px;
+  padding: 9px 149px 13px 12px;
   border: 1px solid $basic-border-input;
   width: 172px;
   height: 45px;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 460px 11px 19px;
+    padding: 19px 460px 11px 14px;
     width: 490px;
     height: 52px;
+    margin-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 11px 41px 11px 19px;
+    padding: 11px 41px 11px 11px;
     width: 430px;
   }
 }

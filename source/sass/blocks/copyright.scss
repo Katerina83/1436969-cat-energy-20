@@ -5,18 +5,30 @@
   color: $special_dark-grey;
   text-decoration: none;
 
+  @include link;
+  @include flex;
+  width: 280px;
+
   &:active {
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 22px;
+    margin-top: 10px;
+    width: 163px;
   }
 }
 
+.copyright__link-form {
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+  }
+}
 
 .copyright__img {
-  margin-top: -10px;
+  fill: $basic-background-social;
 
   &:hover {
     fill: $basic-green;
@@ -29,6 +41,5 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
-    margin-top: -5px;
   }
 }

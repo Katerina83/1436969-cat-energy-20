@@ -11,6 +11,7 @@
     column-gap: 80px;
 
     @include conteiner (110px, 110px, 1440px);
+    margin-bottom: 36px;
   }
 }
 
@@ -24,6 +25,7 @@
   font-size: 24px;
   line-height: 24px;
   padding-left: 20px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -33,9 +35,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include conteiner (110px, 110px, 1440px);
+    @include conteiner (80px, 110px, 1440px);
     margin-bottom: 40px;
-    padding-left: 110px;
+    padding-top: 5px;
   }
 }
 
@@ -45,8 +47,8 @@
   display: inline-block;
 
   @media (min-width: $tablet-width) {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 35px;
+    padding-left: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,12 +75,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 78px;
 
     &::before {
       left: 0;
       width: 100%;
       top: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 25px;
     }
   }
 }

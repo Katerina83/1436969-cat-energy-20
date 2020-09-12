@@ -1,11 +1,18 @@
 .social__list {
   @include flex;
   list-style: none;
-  padding-right: 95px;
-  padding-left: 95px;
+  padding-right: 83px;
+  padding-left: 72px;
 
   @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    padding-left: 80px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 65px;
+    padding-left: 88px;
   }
 }
 

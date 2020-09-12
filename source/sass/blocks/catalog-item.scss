@@ -1,7 +1,7 @@
 .catalog-item {
   @media (min-width: $tablet-width) {
     width: 324px;
-    height: 511px;
+    height: 527px;
     background: linear-gradient(to top, $basic-background 80%, $basic-white 20%);
     border: none;
   }
@@ -18,12 +18,28 @@
   @media (min-width: $tablet-width) {
     @include conteiner (39px, 39px, auto);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
+}
+
+.catalog-item__link-img {
+  @include link;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.catalog-item__link-img-big {
+  margin-bottom: 10px;
 }
 
 .catalog-item__img {
   @include flex;
   flex-wrap: nowrap;
-  margin: 0 20px 22px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -33,12 +49,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin: 0;
   }
 }
 
 .catalog-item__link {
-  text-decoration: none;
+  @include link;
 }
 
 .catalog-item__title {
@@ -53,26 +69,46 @@
     line-height: 24px;
     width: 140px;
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 30px;
+    margin-left: 10px;
   }
 }
 
 .catalog-item__table {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .catalog-item__table-wrapper {
   @include flex;
   flex-direction: column;
+  margin-right: 20px;
+  margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.catalog-item__table-wrapper-big {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .catalog-item__row {
   @include flex;
-  width: 120px;
+  width: 138px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -83,6 +119,8 @@
 
   @media (min-width: $desktop-width) {
     width: 166px;
+    padding-bottom: 12px;
+    padding-top: 0;
   }
 }
 
@@ -91,14 +129,18 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+  }
 }
 
 .catalog-item__button {
   @include btnCatalog;
-  text-decoration: none;
+  @include link;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 93px;
+    padding: 8px 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,6 +157,11 @@
 .catalog-item__goods-big {
   @media (min-width: $tablet-width) {
     margin-left: -35px;
-    margin-top: -25px;
+    margin-top: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -27px;
+    margin-bottom: -10px;
   }
 }

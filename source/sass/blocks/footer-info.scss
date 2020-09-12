@@ -24,12 +24,29 @@
 
   @media (min-width: $desktop-width) {
     @include conteiner (110px, 110px, 1440px);
+    padding-top: 63px;
+  }
+}
+
+.footer-info__container-form {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
+}
+
+.footer-info__container--catalog {
+  padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
   }
 }
 
 .footer-info__logo-icon {
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: 35px;
 
   &:hover {
     opacity: 0.3;

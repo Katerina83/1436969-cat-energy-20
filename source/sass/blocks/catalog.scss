@@ -31,6 +31,10 @@
 }
 
 .catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,7 +54,6 @@
 
 .catalog__catalog-item {
   border-top: 1px solid $basic-color-line;
-  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

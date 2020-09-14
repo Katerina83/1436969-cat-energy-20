@@ -119,15 +119,14 @@ exports.default = gulp.series(
 
 // create build directory with all necessary directories/files
 // start prod environmetn - make a Build
-  exports.build = gulp.series(
-  clean, copy, styles, image, images, sprite, html
+exports.build = gulp.series(
+  clean, copy, styles, image, html
 );
 
 exports.start = gulp.series(
   clean,
   copy,
   styles,
-  sprite,
   html,
   server,
   watcher

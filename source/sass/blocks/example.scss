@@ -248,6 +248,7 @@
 
     &:hover {
       border-bottom: 1px solid $basic-black;
+      outline: 0;
     }
   }
 }
@@ -276,6 +277,10 @@
 }
 
 .example__img-after {
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 665px;
     height: 520px;
@@ -361,12 +366,15 @@
     margin-left: 200px;
     box-shadow: 0 1px 0 $basic-background;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 2px 0 $basic-background;
+      outline: none;
     }
 
     &:active {
       box-shadow: 0 4px 0 $basic-background;
+      outline: none;
     }
 
     &::after {

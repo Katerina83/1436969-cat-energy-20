@@ -2,7 +2,6 @@
   border-top: 1px solid $basic-color-line;
   border-bottom: 1px solid $basic-color-line;
   margin-bottom: 25px;
-  margin-top: -3px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $basic-border-catalog;
@@ -19,7 +18,7 @@
 }
 
 .section-goods__wrapper {
-  margin: 0 25px 38px;
+  margin: 0 25px 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -27,7 +26,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 35px 40px;
   }
 }
 
@@ -42,7 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 92px 3px;
+    margin: 0 56px 47px;
   }
 }
 
@@ -62,7 +63,8 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 25px;
-    padding: 40px 47px 23px;
+    padding: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -83,7 +85,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 30px 90px;
+    padding: 0;
+    padding-bottom: 87px;
   }
 }
 
@@ -118,7 +121,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 45px;
-    margin-left: 30px;
+    padding: 20px 39px;
+    margin-left: 0;
   }
 }

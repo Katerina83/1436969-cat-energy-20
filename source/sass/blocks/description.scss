@@ -86,6 +86,10 @@
     @include background-namber;
     background-image: url("../img/two.png");
   }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+  }
 }
 
 .description__item-wrapper--three {
@@ -93,12 +97,20 @@
     @include background-namber;
     background-image: url("../img/three.png");
   }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+  }
 }
 
 .description__item-wrapper--four {
   @media (min-width: $tablet-width) {
     @include background-namber;
     background-image: url("../img/four.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 

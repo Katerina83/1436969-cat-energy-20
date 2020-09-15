@@ -58,6 +58,16 @@
   @include btnCatalog;
   @include link;
 
+  &:active,
+  &:focus {
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover {
+    background-color: $basic-dark-green;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 6px 285px;
     margin-left: 20px;

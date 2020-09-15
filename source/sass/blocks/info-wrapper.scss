@@ -9,6 +9,13 @@
   background-position: top;
   background-size: 100%;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: none;
     margin-top: 87px;
@@ -34,6 +41,10 @@
       background-color: $basic-green;
       background-position: top left;
       background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }

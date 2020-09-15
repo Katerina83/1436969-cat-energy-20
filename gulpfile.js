@@ -41,7 +41,7 @@ const styles = () => {
     ]))
 	.pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -117,6 +117,10 @@ exports.clean = clean;
 // start prod environmetn - make a Build
 exports.build = gulp.series(
   clean, copy, styles, image, html
+);
+
+exports.default = gulp.series(
+  styles, server, watcher
 );
 
 exports.start = gulp.series(

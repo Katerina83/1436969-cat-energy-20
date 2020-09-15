@@ -87,16 +87,17 @@
 .contacts-wrapper {
   @include flex;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 284px;
   align-items: baseline;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 659px;
+    width: 635px;
     margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 604px;
+    width: 570px;
   }
 }
 
@@ -118,7 +119,7 @@
 }
 
 .contacts__input {
-  box-shadow: inset 0 0 0 1px $basic-border-input;
+  border: 1px solid $basic-border-input;
   outline: none;
 
   &:hover {
@@ -185,8 +186,9 @@
 
 .contacts__email-img,
 .contacts__phone-img {
-  position: relative;
-  right: 35px;
+  position: absolute;
+  right: 18px;
+  top: 15px;
 
   &:active {
     fill: $basic-green;
@@ -197,18 +199,37 @@
   }
 
   @media (min-width: $tablet-width) {
-    right: 47px;
+    right: 22px;
+    top: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 57px;
-    top: -2px;
+    right: 19px;
+    top: 20px;
   }
 }
 
 .contacts__phone-img {
-  @media (min-width: $desktop-width) {
-    right: 44px;
-    top: -2px;
+  right: 14px;
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+    top: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+    top: 13px;
+  }
+}
+
+.contacts__input:required:focus ~ .contacts__email-img,
+.contacts__input:required:active ~ .contacts__email-img {
+  fill: $basic-green;
+}
+
+.contacts__input:required:focus ~ .contacts__phone-img,
+.contacts__input:required:active ~ .contacts__phone-img {
+  fill: $basic-green;
 }

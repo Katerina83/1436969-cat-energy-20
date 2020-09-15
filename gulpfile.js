@@ -113,10 +113,6 @@ const clean = () => {
 }
 exports.clean = clean;
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 // create build directory with all necessary directories/files
 // start prod environmetn - make a Build
 exports.build = gulp.series(

@@ -60,6 +60,19 @@
   height: 150px;
   overflow: auto;
   resize: none;
+  outline: none;
+
+  &:hover {
+    border-color: $basic-border-catalog;
+    outline: none;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 0 1px $special_dark-grey;
+    outline: 0;
+    border-color: $special-black;
+  }
 
   @media (min-width: $tablet-width) {
     width: 630px;

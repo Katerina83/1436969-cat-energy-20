@@ -238,6 +238,7 @@
   text-align: center;
   text-transform: uppercase;
   border: none;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -389,6 +390,10 @@
       margin: auto;
       background-color: $basic-green;
       border-radius: 50%;
+
+      &:hover {
+        border-color: $basic-border-hover;
+      }
     }
   }
 }

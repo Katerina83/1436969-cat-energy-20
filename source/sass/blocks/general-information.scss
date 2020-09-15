@@ -29,19 +29,20 @@
 }
 
 .general-information__input {
-  border: 1px solid $basic-border-input;
+  box-shadow: inset 0 0 0 1px $basic-border-input;
   outline: none;
 
   &:hover {
-    border: 1px solid $basic-border-catalog;
+    box-shadow: inset 0 0 0 1px $basic-border-catalog;
   }
 
-  &:focus {
-    border: 2px solid $special_dark-grey;
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 0 1px $special_dark-grey;
   }
 
   &:invalid {
-    border: 2px solid $basic-red;
+    box-shadow: inset 0 0 0 1px $basic-red;
   }
 }
 
@@ -81,7 +82,6 @@
 
 .general-information__input-weight {
   padding: 9px 181px 13px 12px;
-  border: 1px solid $basic-border-input;
   width: 204px;
   height: 45px;
   margin-bottom: 14px;
@@ -105,7 +105,6 @@
 
 .general-information__input-age {
   padding: 9px 149px 13px 12px;
-  border: 1px solid $basic-border-input;
   width: 172px;
   height: 45px;
   margin-bottom: 14px;

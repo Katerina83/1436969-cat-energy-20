@@ -1063,7 +1063,7 @@
       margin-top: -15px;
       margin-left: 200px;
       box-shadow: 0 1px 0 #f2f2f2; }
-      .example__slider-click:hover .example__slider-click:focus {
+      .example__slider-click:hover, .example__slider-click:focus {
         box-shadow: 0 2px 0 #f2f2f2;
         outline: none; }
       .example__slider-click:active {
@@ -1379,7 +1379,6 @@
       margin-top: 23px; } }
   @media (min-width: 1440px) {
     .section-goods__wrapper {
-      margin-top: 30px;
       display: flex;
       flex-direction: column;
       margin: 30px 35px 40px; } }
